@@ -17,6 +17,10 @@ const routes: Routes = [
     path: 'uncommon',
     component: UncommonPageComponent
   },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
 
 @NgModule({
