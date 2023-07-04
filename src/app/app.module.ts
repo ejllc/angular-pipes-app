@@ -7,9 +7,9 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 
 // Configuración del local
+import { registerLocaleData } from "@angular/common";
 import localEsEs from "@angular/common/locales/es";
 import localFrCA from "@angular/common/locales/fr-CA";
-import { registerLocaleData } from "@angular/common";
 
 registerLocaleData(localEsEs);
 registerLocaleData(localFrCA);
