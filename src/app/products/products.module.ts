@@ -6,9 +6,10 @@ import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { NumbersPageComponent } from './pages/numbers-page/numbers-page.component';
 import { OrderComponent } from './pages/order/order.component';
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
+import { canFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 import { ToggleCasePipe } from './pipes/toogle-case.pipe';
 import { ProductsRoutingModule } from './products-routing.module';
-import { canFlyPipe } from './pipes/can-fly.pipe';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { canFlyPipe } from './pipes/can-fly.pipe';
     // Pipes
     ToggleCasePipe,
     canFlyPipe,
+    SortByPipe,
   ],
   imports: [
     CommonModule,
